@@ -94,6 +94,7 @@ void ATC_MiThermometer::begin(bool activeScan)
 {
     NimBLEDevice::init("ble-scan");
     _pBLEScan = NimBLEDevice::getScan();  // create new scan
+    _pBLEScan->setPhy(NimBLEScan::Phy::SCAN_CODED);
     _pBLEScan->setScanCallbacks(&scanCallbacks);
     _pBLEScan->setActiveScan(activeScan);
     _pBLEScan->setFilterPolicy(BLE_HCI_SCAN_FILT_NO_WL);
