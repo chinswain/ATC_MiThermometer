@@ -8,6 +8,8 @@ Not updated correctly any more!
 [![arduino-library-badge](https://www.ardu-badge.com/badge/ATC_MiThermometer.svg?)](https://www.ardu-badge.com/ATC_MiThermometer)
 -->
 
+EDIT: Updated to use Bluetooth 5.0+ LE Long Range, ensure "#define CONFIG_BT_NIMBLE_EXT_ADV 1" is uncommented in the NimBLE nimconfig.h
+
 Arduino BLE Client Library based on [NimBLE-Arduino](https://github.com/h2zero/NimBLE-Arduino) for receiving ATC_MiThermometer Data (as Advertising Data) - both the "custom" format and the original "atc1441" format are supported.
 
 This project allows to receive data from a battery-powered bluetooth low energy thermometer/hygrometer like the Xiaomi Mijia (LYWSD03MMC) running the custom firmware [ATC_MiThermometer](https://github.com/pvvx/ATC_MiThermometer). The software runs in the Arduino environment on all devices dupported by [NimBLE-Arduino](https://github.com/h2zero/NimBLE-Arduino).
